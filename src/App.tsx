@@ -16,10 +16,6 @@ import {
 
 import { CurrencyInfo } from "./components/CurrencyInfo";
 import { InfoItem } from "./components/InfoItem";
-import {
-  currencyNames_GetAll_Res,
-  currencyRates_GetAll_Res,
-} from "./features/currency/placeholders.ts";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 function App() {
@@ -45,14 +41,14 @@ function App() {
 
   // (1) Загрузка инфы о курсах валют
   useEffect(() => {
-    setCurrencyRate_GetAll_Res(currencyRates_GetAll_Res);
-    // handleFetch_CurrencyRate_GetAll();
+    // setCurrencyRate_GetAll_Res(currencyRates_GetAll_Res);
+    handleFetch_CurrencyRate_GetAll();
   }, []);
 
   // (2) Загрузка названий валют
   useEffect(() => {
-    setCurrencyName_GetAll_Res(currencyNames_GetAll_Res);
-    // handleFetch_CurrencyName_GetAll();
+    // setCurrencyName_GetAll_Res(currencyNames_GetAll_Res);
+    handleFetch_CurrencyName_GetAll();
   }, []);
 
   // (3) Загрузка связей страна/валюта
