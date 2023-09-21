@@ -7,7 +7,8 @@
 ## Запуск:
 ```sh
 npm install
-npm run dev
+npm run dev - (режим разработки)
+npm run build - (соборка приложения под Electron)
 ```
 
 
