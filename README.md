@@ -8,7 +8,7 @@
 ```sh
 npm install
 npm run dev - (режим разработки)
-npm run build - (соборка приложения под Electron)
+npm run build - (сборка приложения под Electron)
 ```
 
 
