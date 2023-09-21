@@ -4,6 +4,13 @@
 - fixer.io
 - country.io
 
+## Запуск:
+```sh
+npm install
+npm run dev
+```
+
+
 ## Использованные технологии:
 - React.JS
 - Vite
